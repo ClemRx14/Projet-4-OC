@@ -1,4 +1,5 @@
 @import 'mixins';
+@import 'variables';
 
 
 * {
@@ -12,11 +13,6 @@ h1, h2, h3, h4, h5, h6 {
 body {
     margin: 0;
 }
-
-//********* Variables de couleurs  ********
-$firstcolor: #9356DC;
-$secondcolor: #FF79DA;
-$thirdcolor: #99E2D0;
 
 
 // ******Header*******//////
@@ -37,7 +33,9 @@ header {
     display: block !important;
 }
 
-.localisation {
+//******* Main ******/////
+
+.main__localisation {
     background-color: rgb(243, 242, 242);
     width: 100%;
     height: 50px;
@@ -50,3 +48,36 @@ header {
     padding-right: 10px;
     }
 }
+
+// ******* Main Partie info********//////
+
+.main__info {
+    @include centre;
+    display: flex;
+    flex-direction: column;
+    background-color: $legergris;
+    &__title {
+        padding-top: 20px;
+        font-family: 'roboto';
+        width: 73%;
+        margin-bottom: 0;
+        font-size: 24px;
+    }
+    &__paragraphe {
+        width: 84%;
+        font-weight: 300;
+        margin-top: 10px;
+        font-size: 18px;
+    }
+    &__btn {
+        @include boutton;
+        @include centre;
+        display: flex;
+        width: 58%;
+        margin-top: 20px;
+        margin-bottom: 40px;
+        color: white;
+        text-decoration: none;
+    }
+}
+
