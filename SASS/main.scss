@@ -84,14 +84,8 @@ header {
     &__btn {
         @include boutton;
         @include centre;
+        @include boutton-content;
         display: flex;
-        margin-top: 20px;
-        margin-bottom: 40px;
-        color: white;
-        text-decoration: none;
-        padding-left: 20px;
-        padding-right: 20px;
-
     }
 }
 

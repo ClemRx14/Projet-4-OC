@@ -11,5 +11,14 @@
     border-radius: 25px;
     height: 50px;
     @include degrade;
+
+}
+@mixin boutton-content {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    color: white;
+    text-decoration: none;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
