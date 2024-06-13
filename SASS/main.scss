@@ -58,6 +58,7 @@ header {
 .main__info {
     @include centre;
     display: flex;
+
     flex-direction: column;
     background-color: $legergris;
     &__title {
