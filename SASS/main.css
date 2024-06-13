@@ -35,6 +35,8 @@ header i {
   height: 50px;
   font-weight: 500;
   display: flex;
+  position: relative;
+  z-index: 2;
   text-align: center;
   justify-content: center;
   align-items: center;
