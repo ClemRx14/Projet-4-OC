@@ -27,6 +27,7 @@ header i {
 
 .headeravecfleche i {
   display: block !important;
+  color: black;
 }
 
 .main__localisation {
