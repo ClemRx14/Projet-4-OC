@@ -29,8 +29,11 @@ header {
         left: 20px;
     }
 }
-.headeravecfleche i {
+.headeravecfleche {
+    i{
     display: block !important;
+    color: black;
+    }
 }
 
 //******* Main ******/////
