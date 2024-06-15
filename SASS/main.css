@@ -69,7 +69,7 @@ header i {
 }
 @media screen and (min-width: 768px) {
   .main__info__title {
-    width: 44%;
+    width: 100%;
     font-size: 40px;
   }
 }
@@ -82,6 +82,7 @@ header i {
 @media screen and (min-width: 768px) {
   .main__info__paragraphe {
     width: 82%;
+    margin-top: 30px;
   }
 }
 .main__info__btn {
