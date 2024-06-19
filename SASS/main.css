@@ -66,6 +66,7 @@ header i {
   width: 73%;
   margin-bottom: 0;
   font-size: 24px;
+  font-weight: 700;
   margin-bottom: 0;
 }
 @media screen and (min-width: 768px) {
@@ -105,22 +106,16 @@ header i {
   background: linear-gradient(to bottom, #ff93e1, #a16be0);
 }
 
-.main__fonctionnement {
-  display: flex;
-  flex-direction: column;
-}
 .main__fonctionnement__title {
   padding-top: 20px;
   font-family: "roboto";
   width: 73%;
   margin-bottom: 0;
   font-size: 24px;
+  font-weight: 700;
   padding-bottom: 20px;
   padding-left: 20px;
   width: 73%;
-  text-align: initial;
-  justify-content: initial;
-  align-items: initial;
 }
 .main__fonctionnement__container {
   text-align: center;
@@ -128,6 +123,22 @@ header i {
   align-items: center;
   display: flex;
   flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .main__fonctionnement__container {
+    flex-direction: row;
+    width: 95%;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .main__fonctionnement__container {
+    flex-direction: row;
+    width: 73%;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
 }
 .main__fonctionnement__ordre {
   display: flex;
@@ -141,4 +152,34 @@ header i {
   align-items: center;
   margin-bottom: 20px;
   width: 85%;
+  position: relative;
+}
+@media screen and (min-width: 768px) {
+  .main__fonctionnement__ordre {
+    width: 31%;
+    white-space: nowrap;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .main__fonctionnement__ordre {
+    width: 31%;
+  }
+}
+.main__fonctionnement__ordre--nombre {
+  position: absolute;
+  left: -15px;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  border: 2px solid #9356DC;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  background-color: #9356DC;
+  color: white;
+}
+.main__fonctionnement__ordre--titre {
+  width: 56%;
+  font-weight: 500;
 }/*# sourceMappingURL=main.css.map */

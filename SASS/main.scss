@@ -94,23 +94,28 @@ header {
 }
 
 .main__fonctionnement {
-    display: flex;
-    flex-direction: column;
     &__title {
         @include titlesect;
         padding-bottom: 20px;
         padding-left: 20px;
         width: 73%;
-        text-align:initial;
-        justify-content: initial;
-        align-items: initial;
-        
-
     }
     &__container {
         @include centre;
         display: flex;
         flex-direction: column ;
+        @media screen and (min-width: 768px){
+            flex-direction: row;
+            width: 95%;
+            justify-content: space-between;
+            margin: 0 auto;
+        }
+        @media screen and (min-width: 1024px) {
+            flex-direction: row;
+            width: 73%;
+            justify-content: space-between;
+            margin: 0 auto;
+        }
     }
     &__ordre {
         display: flex;
@@ -119,6 +124,30 @@ header {
         @include centre;
         margin-bottom: 20px;
         width: 85%;
-  
+        position: relative;
+        @media screen and (min-width: 768px) {
+            width: 31%;
+            white-space: nowrap;
+        }
+        @media screen and (min-width: 1024px){
+            width: 31%;
+
+        }
+        &--nombre {
+            position: absolute ;
+            left: -15px;
+            border-radius: 50%;
+            width: 24px;
+            height: 24px;
+            border: 2px solid $firstcolor;
+            @include centre;
+            display: flex;
+            background-color: $firstcolor;
+            color: white;
+        }
+        &--titre {
+            width: 56%;
+            font-weight: 500;
+        }
     }
 }
