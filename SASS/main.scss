@@ -64,11 +64,8 @@ header {
     flex-direction: column;
     background-color: $legergris;
     &__title {
-        padding-top: 20px;
-        font-family: 'roboto';
-        width: 73%;
+        @include titlesect;
         margin-bottom: 0;
-        font-size: 24px;
         @media screen and (min-width: 768px) {
             width: 100%;
             font-size: 40px;
@@ -90,6 +87,38 @@ header {
         @include centre;
         @include boutton-content;
         display: flex;
+        &:hover {
+            @include degradelight;
     }
 }
+}
 
+.main__fonctionnement {
+    display: flex;
+    flex-direction: column;
+    &__title {
+        @include titlesect;
+        padding-bottom: 20px;
+        padding-left: 20px;
+        width: 73%;
+        text-align:initial;
+        justify-content: initial;
+        align-items: initial;
+        
+
+    }
+    &__container {
+        @include centre;
+        display: flex;
+        flex-direction: column ;
+    }
+    &__ordre {
+        display: flex;
+        flex-direction: row;
+        @include bouttonfonctionnement;
+        @include centre;
+        margin-bottom: 20px;
+        width: 85%;
+  
+    }
+}

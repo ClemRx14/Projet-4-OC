@@ -66,6 +66,7 @@ header i {
   width: 73%;
   margin-bottom: 0;
   font-size: 24px;
+  margin-bottom: 0;
 }
 @media screen and (min-width: 768px) {
   .main__info__title {
@@ -99,4 +100,45 @@ header i {
   padding-left: 20px;
   padding-right: 20px;
   display: flex;
+}
+.main__info__btn:hover {
+  background: linear-gradient(to bottom, #ff93e1, #a16be0);
+}
+
+.main__fonctionnement {
+  display: flex;
+  flex-direction: column;
+}
+.main__fonctionnement__title {
+  padding-top: 20px;
+  font-family: "roboto";
+  width: 73%;
+  margin-bottom: 0;
+  font-size: 24px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  width: 73%;
+  text-align: initial;
+  justify-content: initial;
+  align-items: initial;
+}
+.main__fonctionnement__container {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.main__fonctionnement__ordre {
+  display: flex;
+  flex-direction: row;
+  border-radius: 20px;
+  height: 72px;
+  background-color: #faf9f9;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  width: 85%;
 }/*# sourceMappingURL=main.css.map */

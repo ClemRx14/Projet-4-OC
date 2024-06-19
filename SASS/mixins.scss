@@ -1,10 +1,18 @@
+//******* Partie Général*****/////
+
+
 @mixin centre {
     text-align: center;
     justify-content: center;
     align-items: center;
 }
+
 @mixin degrade {
     background: linear-gradient(to bottom, $secondcolor, $firstcolor);
+}
+
+@mixin degradelight {
+    background: linear-gradient(to bottom, $lightensecondcolor, $lightenfirstcolor);
 }
 
 @mixin boutton {
@@ -20,5 +28,22 @@
     text-decoration: none;
     padding-left: 20px;
     padding-right: 20px;
+}
+
+@mixin titlesect {
+    padding-top: 20px;
+    font-family: 'roboto';
+    width: 73%;
+    margin-bottom: 0;
+    font-size: 24px;
+}
+
+//******* Partie Fonctionnement*****/////
+
+@mixin bouttonfonctionnement {
+    border-radius: 20px;
+    height: 72px;
+    background-color: $legergris;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
