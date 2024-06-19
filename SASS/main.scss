@@ -65,13 +65,10 @@ header {
     flex-direction: column;
     background-color: $legergris;
     &__title {
-        padding-top: 20px;
-        font-family: 'roboto';
-        width: 73%;
+        @include titlesect;
         margin-bottom: 0;
-        font-size: 24px;
         @media screen and (min-width: 768px) {
-            width: 44%;
+            width: 100%;
             font-size: 40px;
         }
     }
@@ -82,6 +79,7 @@ header {
         font-size: 18px;
         @media screen and (min-width: 768px) {
             width: 82%;
+            margin-top: 30px;
             
         }
     }
@@ -90,6 +88,84 @@ header {
         @include centre;
         @include boutton-content;
         display: flex;
+        &:hover {
+            @include degradelight;
     }
 }
+}
 
+//****** Main partie Fonctionnement  ********//
+
+.main__fonctionnement {
+    &__title {
+        @include titlesect;
+        padding-bottom: 20px;
+        padding-left: 20px;
+        width: 73%;
+        @media screen and (min-width: 1024px) {
+            margin-left: 120px;
+        }
+    }
+    &__container {
+        @include centre;
+        display: flex;
+        flex-direction: column ;
+        @media screen and (min-width: 768px){
+            flex-direction: row;
+            width: 95%;
+            justify-content: space-between;
+            margin: 0 auto;
+        }
+        @media screen and (min-width: 1024px) {
+            flex-direction: row;
+            width: 73%;
+        }
+    }
+    &__ordre {
+        display: flex;
+        flex-direction: row;
+        @include bouttonfonctionnement;
+        @include centre;
+        margin-bottom: 20px;
+        width: 85%;
+        position: relative;
+        white-space: nowrap;
+        &:hover {
+            i {
+            color: $firstcolor;
+            }
+        }
+        @media screen and (min-width: 768px) {
+            width: 31%;
+            white-space: nowrap;
+        }
+        &--nombre {
+            position: absolute ;
+            left: -15px;
+            border-radius: 50%;
+            width: 24px;
+            height: 24px;
+            border: 2px solid $firstcolor;
+            @include centre;
+            display: flex;
+            background-color: $firstcolor;
+            color: white;
+        }
+        &--titre {
+            width: 56%;
+            font-weight: 500;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            @include centre;
+
+        }
+        & i {
+            padding-right: 50px;
+            @media screen and (min-width: 768px) {
+                padding-left: 10px;
+                padding-right: 15px;
+            }
+        }
+    }
+}

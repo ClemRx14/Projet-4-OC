@@ -66,10 +66,12 @@ header i {
   width: 73%;
   margin-bottom: 0;
   font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 0;
 }
 @media screen and (min-width: 768px) {
   .main__info__title {
-    width: 44%;
+    width: 100%;
     font-size: 40px;
   }
 }
@@ -82,6 +84,7 @@ header i {
 @media screen and (min-width: 768px) {
   .main__info__paragraphe {
     width: 82%;
+    margin-top: 30px;
   }
 }
 .main__info__btn {
@@ -98,4 +101,102 @@ header i {
   padding-left: 20px;
   padding-right: 20px;
   display: flex;
+}
+.main__info__btn:hover {
+  background: linear-gradient(to bottom, #ff93e1, #a16be0);
+}
+
+.main__fonctionnement__title {
+  padding-top: 20px;
+  font-family: "roboto";
+  width: 73%;
+  margin-bottom: 0;
+  font-size: 24px;
+  font-weight: 700;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  width: 73%;
+}
+@media screen and (min-width: 1024px) {
+  .main__fonctionnement__title {
+    margin-left: 120px;
+  }
+}
+.main__fonctionnement__container {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .main__fonctionnement__container {
+    flex-direction: row;
+    width: 95%;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .main__fonctionnement__container {
+    flex-direction: row;
+    width: 73%;
+  }
+}
+.main__fonctionnement__ordre {
+  display: flex;
+  flex-direction: row;
+  border-radius: 20px;
+  height: 72px;
+  background-color: #faf9f9;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  width: 85%;
+  position: relative;
+  white-space: nowrap;
+}
+.main__fonctionnement__ordre:hover i {
+  color: #9356DC;
+}
+@media screen and (min-width: 768px) {
+  .main__fonctionnement__ordre {
+    width: 31%;
+    white-space: nowrap;
+  }
+}
+.main__fonctionnement__ordre--nombre {
+  position: absolute;
+  left: -15px;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  border: 2px solid #9356DC;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  background-color: #9356DC;
+  color: white;
+}
+.main__fonctionnement__ordre--titre {
+  width: 56%;
+  font-weight: 500;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.main__fonctionnement__ordre i {
+  padding-right: 50px;
+}
+@media screen and (min-width: 768px) {
+  .main__fonctionnement__ordre i {
+    padding-left: 10px;
+    padding-right: 15px;
+  }
 }/*# sourceMappingURL=main.css.map */

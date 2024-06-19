@@ -5,3 +5,5 @@ $firstcolor: #9356DC;
 $secondcolor: #FF79DA;
 $thirdcolor: #99E2D0;
 $legergris: #faf9f9;
+$lightenfirstcolor: lighten($firstcolor,5%);
+$lightensecondcolor: lighten($secondcolor,5%);
