@@ -236,6 +236,7 @@ header i {
 }
 .main__restaurants__cards a {
   text-decoration: none;
+  color: black;
 }
 .main__restaurants__card {
   width: 90%;
@@ -277,7 +278,6 @@ header i {
   border: none;
   cursor: pointer;
   display: flex;
-  align-items: center;
   position: relative;
   right: -100%;
   top: -55px;
@@ -298,4 +298,9 @@ header i {
 }
 .main__restaurants__card__content--btncoeur .fa-solid:active {
   opacity: 1;
+}
+.main__restaurants__card__content--btncoeur .fa-heart {
+  position: absolute;
+  top: 50%;
+  left: 50%;
 }/*# sourceMappingURL=main.css.map */
