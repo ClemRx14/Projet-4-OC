@@ -158,7 +158,6 @@ header {
             flex-direction: row;
             align-items: center;
             @include centre;
-
         }
         & i {
             padding-right: 50px;
@@ -166,6 +165,12 @@ header {
                 padding-left: 10px;
                 padding-right: 15px;
             }
+        }
+        &:first-child i {
+            margin-left: 13px;
+        }
+        &:last-child i {
+            margin-left: 5px;
         }
     }
 }
