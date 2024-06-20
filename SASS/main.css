@@ -209,6 +209,7 @@ header i {
 
 .main__restaurants {
   background-color: #faf9f9;
+  padding-bottom: 30px;
 }
 .main__restaurants__title {
   padding-top: 20px;
@@ -242,7 +243,6 @@ header i {
   background-color: white;
   margin-bottom: 20px;
   border-radius: 20px;
-  height: 231px;
 }
 .main__restaurants__card img {
   width: 100%;
@@ -267,7 +267,6 @@ header i {
 .main__restaurants__card__content--localisation {
   width: 65%;
   margin-top: 0;
-  padding-bottom: 20px;
   padding-left: 10px;
   font-size: 17px;
   font-weight: 300;
