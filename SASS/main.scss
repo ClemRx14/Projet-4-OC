@@ -239,16 +239,16 @@ header {
                 position: relative;
                 right: -100%;
                 top: -55px;
-                font-size: 25px;
                 color: black;
+                font-size: 25px;
                 transition: color 0.3s ease;
                 .fa-solid {
                     position: absolute;
                     top: 0;
                     left: 0;
-                    color: $firstcolor;
                     transition: opacity 0.3s ease;
                     opacity: 0;
+                    color: $heartcolor;
                     &:hover {
                         opacity: 1;
                     }

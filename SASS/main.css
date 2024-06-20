@@ -281,17 +281,17 @@ header i {
   position: relative;
   right: -100%;
   top: -55px;
-  font-size: 25px;
   color: black;
+  font-size: 25px;
   transition: color 0.3s ease;
 }
 .main__restaurants__card__content--btncoeur .fa-solid {
   position: absolute;
   top: 0;
   left: 0;
-  color: #9356DC;
   transition: opacity 0.3s ease;
   opacity: 0;
+  color: #c968db;
 }
 .main__restaurants__card__content--btncoeur .fa-solid:hover {
   opacity: 1;
