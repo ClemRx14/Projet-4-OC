@@ -232,11 +232,10 @@ header i {
 .main__restaurants__cards {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 .main__restaurants__cards a {
   text-decoration: none;
-  display: flex;
-  justify-content: center;
 }
 .main__restaurants__card {
   width: 90%;
@@ -273,10 +272,30 @@ header i {
   font-size: 17px;
   font-weight: 300;
 }
-.main__restaurants__card__content i {
+.main__restaurants__card__content--btncoeur {
+  background: none;
+  border: none;
+  cursor: pointer;
   display: flex;
+  align-items: center;
   position: relative;
-  right: -110%;
-  top: -50px;
+  right: -100%;
+  top: -55px;
   font-size: 25px;
+  color: black;
+  transition: color 0.3s ease;
+}
+.main__restaurants__card__content--btncoeur .fa-solid {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #9356DC;
+  transition: opacity 0.3s ease;
+  opacity: 0;
+}
+.main__restaurants__card__content--btncoeur .fa-solid:hover {
+  opacity: 1;
+}
+.main__restaurants__card__content--btncoeur .fa-solid:active {
+  opacity: 1;
 }/*# sourceMappingURL=main.css.map */
