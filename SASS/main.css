@@ -205,4 +205,70 @@ header i {
 }
 .main__fonctionnement__ordre:last-child i {
   margin-left: 5px;
+}
+
+.main__restaurants {
+  background-color: #faf9f9;
+}
+.main__restaurants__title {
+  padding-top: 20px;
+  font-family: "roboto";
+  width: 73%;
+  margin-bottom: 0;
+  font-size: 24px;
+  font-weight: 700;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  margin-top: 50px;
+  padding-top: 50px;
+  width: 73%;
+}
+@media screen and (min-width: 1024px) {
+  .main__restaurants__title {
+    margin-left: 120px;
+  }
+}
+.main__restaurants__cards {
+  display: flex;
+  flex-direction: column;
+}
+.main__restaurants__cards a {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+}
+.main__restaurants__card {
+  width: 90%;
+  background-color: white;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  height: 231px;
+}
+.main__restaurants__card img {
+  width: 100%;
+  height: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.main__restaurants__card__content {
+  color: black;
+}
+.main__restaurants__card__content--title {
+  font-family: "roboto";
+  width: 71%;
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 10px;
+  margin-bottom: 3px;
+  padding-left: 10px;
+}
+.main__restaurants__card__content--localisation {
+  width: 65%;
+  margin-top: 0;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  font-size: 17px;
+  font-weight: 300;
 }/*# sourceMappingURL=main.css.map */
