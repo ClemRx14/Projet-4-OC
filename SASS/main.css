@@ -254,6 +254,8 @@ header i {
 }
 .main__restaurants__card__content {
   color: black;
+  width: 80%;
+  height: 60px;
 }
 .main__restaurants__card__content--title {
   font-family: "roboto";
@@ -270,4 +272,11 @@ header i {
   padding-left: 10px;
   font-size: 17px;
   font-weight: 300;
+}
+.main__restaurants__card__content i {
+  display: flex;
+  position: relative;
+  right: -110%;
+  top: -50px;
+  font-size: 25px;
 }/*# sourceMappingURL=main.css.map */

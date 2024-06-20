@@ -213,6 +213,8 @@ header {
         }
         &__content {
             color: black;
+            width: 80%;
+            height: 60px;
             &--title {
                 font-family: 'roboto';
                 width: 71%;
@@ -228,6 +230,13 @@ header {
                 padding-left: 10px;
                 font-size: 17px;
                 font-weight: 300;
+            }
+            & i {
+                display: flex;
+                position: relative;
+                right: -110%;
+                top: -50px;
+                font-size: 25px;
             }
         }
     }
