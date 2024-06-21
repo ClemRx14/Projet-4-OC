@@ -331,6 +331,11 @@ header i {
   font-size: 17px;
   font-weight: 300;
 }
+@media screen and (min-width: 768px) {
+  .main__restaurants__card:nth-of-type(2) .main__restaurants__card__content--localisation {
+    margin-left: -8%;
+  }
+}
 .main__restaurants__card__content--btncoeur {
   background: none;
   border: none;
