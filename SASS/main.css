@@ -124,7 +124,7 @@ header i {
 }
 @media screen and (min-width: 1024px) {
   .main__fonctionnement__title {
-    padding-left: 10%;
+    padding-left: 12%;
   }
 }
 .main__fonctionnement__container {
@@ -236,7 +236,7 @@ header i {
 }
 @media screen and (min-width: 1024px) {
   .main__restaurants__title {
-    padding-left: 5%;
+    padding-left: 7%;
   }
 }
 .main__restaurants__cards {
