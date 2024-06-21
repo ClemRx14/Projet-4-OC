@@ -390,4 +390,10 @@ header i {
 .footer__liste a {
   text-decoration: none;
   color: white;
+}
+.footer__liste i {
+  padding-right: 10px;
+}
+.footer__liste--item:first-child i {
+  padding-right: 16px;
 }/*# sourceMappingURL=main.css.map */

@@ -336,5 +336,13 @@ header {
             text-decoration: none;
             color: white;
         }
+        & i {
+            padding-right: 10px;
+        }
+        &--item {
+            &:first-child i {
+                padding-right: 16px;
+            }
+        }
     }
 }
