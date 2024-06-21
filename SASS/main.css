@@ -23,6 +23,7 @@ header i {
   width: 8%;
   position: absolute;
   left: 20px;
+  top: 22px;
 }
 
 .headeravecfleche i {
@@ -214,7 +215,7 @@ header i {
 
 .main__restaurants {
   background-color: #faf9f9;
-  padding-bottom: 30px;
+  padding-bottom: 50px;
 }
 .main__restaurants__title {
   padding-top: 20px;
@@ -366,4 +367,24 @@ header i {
   position: absolute;
   top: 50%;
   left: 50%;
+}
+
+.footer {
+  background-color: #353535;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.footer__title {
+  width: 37%;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 400;
+  margin-bottom: 0;
+  margin-left: 20px;
+}
+.footer__liste a {
+  text-decoration: none;
+  color: white;
 }/*# sourceMappingURL=main.css.map */
