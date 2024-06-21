@@ -384,6 +384,9 @@ header i {
   margin-bottom: 0;
   margin-left: 20px;
 }
+.footer__liste {
+  list-style-type: none;
+}
 .footer__liste a {
   text-decoration: none;
   color: white;
