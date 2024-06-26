@@ -102,9 +102,10 @@ header i {
   padding-left: 20px;
   padding-right: 20px;
   display: flex;
+  transition: opacity 1s ease-in-out;
 }
 .main__info__btn:hover {
-  background: linear-gradient(to bottom, #ff93e1, #a16be0);
+  opacity: 0.6;
 }
 
 .main__fonctionnement__title {
@@ -351,8 +352,6 @@ header i {
 }
 .main__restaurants__card__content--btncoeur .fa-solid {
   position: absolute;
-  top: 0;
-  left: 0;
   transition: opacity 0.3s ease;
   opacity: 0;
   color: #c968db;

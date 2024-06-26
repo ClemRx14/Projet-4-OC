@@ -7,8 +7,7 @@ $thirdcolor: #99E2D0;
 $legergris: #faf9f9;
 $vertclair: lighten(#99E2D0,5%);
 $vertfonce: #008766;
-$lightenfirstcolor: lighten($firstcolor,5%);
-$lightensecondcolor: lighten($secondcolor,5%);
+
 
 //****** Voir pour faire un dégradé radient car la fonction mix ne concorde pas vraiment avec la maquette******//
 $heartcolor: mix($firstcolor,$secondcolor,50%);
