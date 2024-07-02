@@ -1,0 +1,13 @@
+.loader {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  z-index: 10;
+}
+.loader__plat__assiette {
+  width: 150px;
+  height: 150px;
+}/*# sourceMappingURL=loader.css.map */
