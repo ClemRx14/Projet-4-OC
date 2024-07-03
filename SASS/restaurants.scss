@@ -1,10 +1,67 @@
 @import 'mixins';
 @import 'variables';
 
+
+// ****** Partie titre du restaurant ******/////
+.main {
+    @include centre;
+    display: flex;
+    margin-bottom: 40px;
+
+}
 .main__resto {
+    width: 100%;
     & img {
     width: 100%;
     height: 275px;
     object-fit: cover;
+    display: flex;
+    position: relative;
+    }
+    &__container {
+        display: flex;
+        position: absolute;
+        background-color: $legergris;
+        width: 100%;
+        top: 283px;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+        @media screen and (min-width: 1024px) {
+            width: 73%;
+            @include centre;
+        }
+    }
+    &__titlenheart {
+        display: flex;
+        width: 100%;
+        @include centre;
+        &--title {
+            font-size: 28px;
+            font-weight: 400;
+        }
+        &--heart {
+            background: none;
+            border: none;
+            cursor: pointer;
+            display: flex;
+            color: black;
+            position: relative;
+            left: 5%;
+            font-size: 25px;
+            transition: color 0.3s ease;
+            .fa-solid {
+            position: absolute;
+            transition: opacity 0.3s ease;
+            opacity: 0;
+            color: $heartcolor;
+            &:hover {
+                        opacity: 1;
+                    }
+                    &:active {
+                        opacity: 1;
+                    }
+                }
+        }
+
     }
 }

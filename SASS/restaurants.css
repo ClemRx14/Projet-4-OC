@@ -1,5 +1,69 @@
+.main {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.main__resto {
+  width: 100%;
+}
 .main__resto img {
   width: 100%;
   height: 275px;
   object-fit: cover;
+  display: flex;
+  position: relative;
+}
+.main__resto__container {
+  display: flex;
+  position: absolute;
+  background-color: #faf9f9;
+  width: 100%;
+  top: 283px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+@media screen and (min-width: 1024px) {
+  .main__resto__container {
+    width: 73%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.main__resto__titlenheart {
+  display: flex;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.main__resto__titlenheart--title {
+  font-size: 28px;
+  font-weight: 400;
+}
+.main__resto__titlenheart--heart {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  color: black;
+  position: relative;
+  left: 5%;
+  font-size: 25px;
+  transition: color 0.3s ease;
+}
+.main__resto__titlenheart--heart .fa-solid {
+  position: absolute;
+  transition: opacity 0.3s ease;
+  opacity: 0;
+  color: #c968db;
+}
+.main__resto__titlenheart--heart .fa-solid:hover {
+  opacity: 1;
+}
+.main__resto__titlenheart--heart .fa-solid:active {
+  opacity: 1;
 }/*# sourceMappingURL=restaurants.css.map */
