@@ -2,20 +2,13 @@
 @import 'variables';
 
 
-// ****** Partie titre du restaurant ******/////
-.main {
-    @include centre;
-    display: flex;
-    margin-bottom: 40px;
-
-}
 .main__resto {
     width: 100%;
     & img {
     width: 100%;
     height: 275px;
     object-fit: cover;
-    display: flex;
+    display: block;
     position: relative;
     }
     &__container {
@@ -28,7 +21,8 @@
         border-top-right-radius: 25px;
         @media screen and (min-width: 1024px) {
             width: 73%;
-            @include centre;
+            left: 50%;
+            transform: translateX(-50%);
         }
     }
     &__titlenheart {
@@ -55,13 +49,32 @@
             opacity: 0;
             color: $heartcolor;
             &:hover {
-                        opacity: 1;
-                    }
-                    &:active {
-                        opacity: 1;
-                    }
-                }
+                opacity: 1;
+            }
+            &:active {
+                opacity: 1;
+            }
+          }
         }
-
+    }
+    &__menu {
+        width: 100%;
+        background-color: $legergris;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        margin-top: 30px;
+        @media screen and (min-width: 1024px) {
+            width: 73%;
+        }
+        &--entrees {
+            width: 93%;
+        }
+        &--plats {
+            width: 93%;
+        }
+        &--desserts {
+            width: 93%;
+        }
     }
 }

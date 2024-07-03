@@ -1,11 +1,3 @@
-.main {
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  margin-bottom: 40px;
-}
-
 .main__resto {
   width: 100%;
 }
@@ -13,7 +5,7 @@
   width: 100%;
   height: 275px;
   object-fit: cover;
-  display: flex;
+  display: block;
   position: relative;
 }
 .main__resto__container {
@@ -28,9 +20,8 @@
 @media screen and (min-width: 1024px) {
   .main__resto__container {
     width: 73%;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
 .main__resto__titlenheart {
@@ -66,4 +57,26 @@
 }
 .main__resto__titlenheart--heart .fa-solid:active {
   opacity: 1;
+}
+.main__resto__menu {
+  width: 100%;
+  background-color: #faf9f9;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  margin-top: 30px;
+}
+@media screen and (min-width: 1024px) {
+  .main__resto__menu {
+    width: 73%;
+  }
+}
+.main__resto__menu--entrees {
+  width: 93%;
+}
+.main__resto__menu--plats {
+  width: 93%;
+}
+.main__resto__menu--desserts {
+  width: 93%;
 }/*# sourceMappingURL=restaurants.css.map */
