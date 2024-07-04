@@ -62,19 +62,61 @@
         background-color: $legergris;
         display: flex;
         flex-direction: column;
-        margin: auto;
         margin-top: 30px;
         @media screen and (min-width: 1024px) {
             width: 73%;
+            margin: auto;
+            margin-top: 30px;
+        }
+        &--container {
+            display: flex;
+            flex-direction: column;
+            width: 93%;
+            padding-left: 7%;
+            @media screen and (min-width: 1024px) {
+                @include centre;
+            }
+        }
+        &--title {
+            display: flex;
+            width: 73%;
+            font-size: 16px;
+            font-weight: 300;
+            
+            @media screen and (min-width: 1024px) {
+                width: 43%;
+            }
         }
         &--entrees {
-            width: 93%;
+            @media screen and (min-width: 1024px){
+                width: 60%;
+            }
         }
         &--plats {
-            width: 93%;
+            @media screen and (min-width: 1024px){
+                width: 60%;
+            }
         }
         &--desserts {
+            @media screen and (min-width: 1024px){
+                width: 60%;
+            }
+        }
+        &__card {
+            background-color: white;
+            border-radius: 15px;
+            height: 69px;
             width: 93%;
+            &--title {
+                width: 82%;
+                font-size: 18px;
+                font-weight: 500;
+            }
+            &--precision {
+                width: 82%;
+                font-size: 15px;
+                font-weight: 300;
+            }
         }
     }
 }

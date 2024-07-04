@@ -89,7 +89,7 @@
 .main__resto__container {
   display: flex;
   position: absolute;
-  background-color: hsl(0, 9%, 98%);
+  background-color: #faf9f9;
   width: 100%;
   top: 283px;
   border-top-left-radius: 25px;
@@ -141,22 +141,69 @@
   background-color: #faf9f9;
   display: flex;
   flex-direction: column;
-  margin: auto;
   margin-top: 30px;
 }
 @media screen and (min-width: 1024px) {
   .main__resto__menu {
     width: 73%;
+    margin: auto;
+    margin-top: 30px;
   }
 }
-.main__resto__menu--entrees {
+.main__resto__menu--container {
+  display: flex;
+  flex-direction: column;
+  width: 93%;
+  padding-left: 7%;
+}
+@media screen and (min-width: 1024px) {
+  .main__resto__menu--container {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.main__resto__menu--title {
+  display: flex;
+  width: 73%;
+  font-size: 16px;
+  font-weight: 300;
+}
+@media screen and (min-width: 1024px) {
+  .main__resto__menu--title {
+    width: 43%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .main__resto__menu--entrees {
+    width: 60%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .main__resto__menu--plats {
+    width: 60%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .main__resto__menu--desserts {
+    width: 60%;
+  }
+}
+.main__resto__menu__card {
+  background-color: white;
+  border-radius: 15px;
+  height: 69px;
   width: 93%;
 }
-.main__resto__menu--plats {
-  width: 93%;
+.main__resto__menu__card--title {
+  width: 82%;
+  font-size: 18px;
+  font-weight: 500;
 }
-.main__resto__menu--desserts {
-  width: 93%;
+.main__resto__menu__card--precision {
+  width: 82%;
+  font-size: 15px;
+  font-weight: 300;
 }
 
 * {
