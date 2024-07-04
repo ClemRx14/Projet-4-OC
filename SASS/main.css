@@ -155,7 +155,7 @@
   flex-direction: column;
   width: 93%;
   padding-left: 7%;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 @media screen and (min-width: 1024px) {
   .main__resto__menu--container {
@@ -179,15 +179,18 @@
   height: 69px;
   width: 93%;
   padding-left: 15px;
+  margin-bottom: 15px;
   white-space: nowrap;
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
 .main__resto__menu__card--title {
   width: 82%;
   font-size: 18px;
   font-weight: 500;
-  padding-top: 10px;
   margin-bottom: 5px;
+  margin-top: 10px;
 }
 .main__resto__menu__card--precision {
   width: 82%;
@@ -218,7 +221,28 @@
     width: 60%;
   }
 }
-
+.main__resto__menu__btn {
+  border-radius: 25px;
+  height: 50px;
+  background: linear-gradient(to bottom, #FF79DA, #9356DC);
+  margin-top: 20px;
+  margin-bottom: 40px;
+  color: white;
+  text-decoration: none;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 186px;
+  margin: auto;
+  margin-top: 40px;
+  transition: opacity 1s ease-in-out;
+}
+.main__resto__menu__btn:hover {
+  opacity: 0.6;
+}
 * {
   font-family: "roboto", sans-serif;
 }

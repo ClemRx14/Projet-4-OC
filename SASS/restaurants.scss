@@ -73,7 +73,7 @@
             flex-direction: column;
             width: 93%;
             padding-left: 7%;
-            margin-bottom: 20px;
+            margin-bottom: 40px;
             @media screen and (min-width: 1024px) {
                 align-items: center;
             }
@@ -94,14 +94,17 @@
             height: 69px;
             width: 93%;
             padding-left: 15px;
+            margin-bottom: 15px;
             white-space: nowrap;
             position: relative;
+            display: flex;
+            flex-direction: column;
             &--title {
                 width: 82%;
                 font-size: 18px;
                 font-weight: 500;
-                padding-top: 10px;
                 margin-bottom: 5px;
+                margin-top: 10px;
             }
             &--precision {
                 width: 82%;
@@ -131,6 +134,23 @@
         &--desserts {
             @media screen and (min-width: 1024px){
                 width: 60%;
+            }
+        }
+        &__btn {
+            @include boutton;
+            @include boutton-content;
+            @include centre;
+            display: flex;
+            width: 186px;
+            margin: auto;
+            margin-top: 40px;
+            transition: opacity 1s ease-in-out;
+            &:hover {
+                opacity: 0.6;
+            }
+            @media screen and (min-width: 1024px) {
+
+
             }
         }
     }
