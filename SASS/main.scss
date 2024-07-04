@@ -89,12 +89,14 @@ header {
         @include boutton;
         @include centre;
         @include boutton-content;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
         display: flex;
         transition: opacity 1s ease-in-out;
         &:hover {
             opacity: 0.6;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+        }
     }
-}
 }
 
 //****** Main partie Fonctionnement  ********//
