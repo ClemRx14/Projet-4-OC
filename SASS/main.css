@@ -167,11 +167,21 @@
   width: 73%;
   font-size: 16px;
   font-weight: 300;
+  position: relative;
+  margin-bottom: 20px;
 }
 @media screen and (min-width: 1024px) {
   .main__resto__menu--title {
     width: 43%;
   }
+}
+.main__resto__menu--title::after {
+  position: absolute;
+  content: "";
+  border-bottom: 3px solid #ade8d9;
+  width: 40px;
+  top: 100%;
+  margin-top: 5px;
 }
 .main__resto__menu__card {
   background-color: white;
@@ -207,17 +217,7 @@
   top: 55%;
 }
 @media screen and (min-width: 1024px) {
-  .main__resto__menu--entrees {
-    width: 60%;
-  }
-}
-@media screen and (min-width: 1024px) {
   .main__resto__menu--plats {
-    width: 60%;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .main__resto__menu--desserts {
     width: 60%;
   }
 }

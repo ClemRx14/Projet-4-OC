@@ -83,10 +83,19 @@
             width: 73%;
             font-size: 16px;
             font-weight: 300;
-            
+            position: relative;
+            margin-bottom: 20px;
             @media screen and (min-width: 1024px) {
                 width: 43%;
             }
+        }
+        &--title::after {
+            position: absolute;
+            content: '';
+            border-bottom: 3px solid $vertclair;
+            width: 40px;
+            top: 100%;
+            margin-top: 5px;
         }
         &__card {
             background-color: white;
@@ -121,17 +130,7 @@
                 top: 55%;
             }
         }
-        &--entrees {
-            @media screen and (min-width: 1024px){
-                width: 60%;
-            }
-        }
         &--plats {
-            @media screen and (min-width: 1024px){
-                width: 60%;
-            }
-        }
-        &--desserts {
             @media screen and (min-width: 1024px){
                 width: 60%;
             }
