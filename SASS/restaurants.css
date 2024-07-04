@@ -77,11 +77,10 @@
   flex-direction: column;
   width: 93%;
   padding-left: 7%;
+  margin-bottom: 20px;
 }
 @media screen and (min-width: 1024px) {
   .main__resto__menu--container {
-    text-align: center;
-    justify-content: center;
     align-items: center;
   }
 }
@@ -95,6 +94,36 @@
   .main__resto__menu--title {
     width: 43%;
   }
+}
+.main__resto__menu__card {
+  background-color: white;
+  border-radius: 15px;
+  height: 69px;
+  width: 93%;
+  padding-left: 15px;
+  white-space: nowrap;
+  position: relative;
+}
+.main__resto__menu__card--title {
+  width: 82%;
+  font-size: 18px;
+  font-weight: 500;
+  padding-top: 10px;
+  margin-bottom: 5px;
+}
+.main__resto__menu__card--precision {
+  width: 82%;
+  font-size: 15px;
+  font-weight: 300;
+  margin-top: 0;
+}
+.main__resto__menu__card--price {
+  width: 5%;
+  font-size: 15px;
+  font-weight: 700;
+  position: absolute;
+  right: 7%;
+  top: 55%;
 }
 @media screen and (min-width: 1024px) {
   .main__resto__menu--entrees {
@@ -110,20 +139,4 @@
   .main__resto__menu--desserts {
     width: 60%;
   }
-}
-.main__resto__menu__card {
-  background-color: white;
-  border-radius: 15px;
-  height: 69px;
-  width: 93%;
-}
-.main__resto__menu__card--title {
-  width: 82%;
-  font-size: 18px;
-  font-weight: 500;
-}
-.main__resto__menu__card--precision {
-  width: 82%;
-  font-size: 15px;
-  font-weight: 300;
 }/*# sourceMappingURL=restaurants.css.map */
