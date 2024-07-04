@@ -143,13 +143,11 @@
             width: 186px;
             margin: auto;
             margin-top: 40px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
             transition: opacity 1s ease-in-out;
             &:hover {
                 opacity: 0.6;
-            }
-            @media screen and (min-width: 1024px) {
-
-
+                box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
             }
         }
     }

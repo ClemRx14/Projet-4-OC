@@ -160,8 +160,10 @@
   width: 186px;
   margin: auto;
   margin-top: 40px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   transition: opacity 1s ease-in-out;
 }
 .main__resto__menu__btn:hover {
   opacity: 0.6;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }/*# sourceMappingURL=restaurants.css.map */
