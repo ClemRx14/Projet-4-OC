@@ -138,6 +138,19 @@
   right: 7%;
   top: 55%;
 }
+.main__resto__menu--plats {
+  opacity: 0;
+  animation: menuderouleur 3s ease-in-out forwards;
+}
+.main__resto__menu--plats:nth-of-type(1) {
+  animation-delay: 1s;
+}
+.main__resto__menu--plats:nth-of-type(2) {
+  animation-delay: 2s;
+}
+.main__resto__menu--plats:nth-of-type(3) {
+  animation-delay: 3s;
+}
 @media screen and (min-width: 1024px) {
   .main__resto__menu--plats {
     width: 60%;
@@ -166,4 +179,13 @@
 .main__resto__menu__btn:hover {
   opacity: 0.6;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+@keyframes menuderouleur {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }/*# sourceMappingURL=restaurants.css.map */
