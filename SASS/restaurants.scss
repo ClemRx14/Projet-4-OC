@@ -105,9 +105,13 @@
             padding-left: 15px;
             margin-bottom: 15px;
             white-space: nowrap;
-            position: relative;
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
+            justify-content: space-between;
+            &--tp {
+                display: flex;
+                flex-direction: column;
+            }
             &--title {
                 width: 82%;
                 font-size: 18px;
@@ -125,9 +129,9 @@
                 width: 5%;
                 font-size: 15px;
                 font-weight: 700;
-                position: absolute;
-                right: 7%;
-                top: 55%;
+                margin-top: 40px;
+                margin-right: 20px;
+
             }
         }
         &--plats {

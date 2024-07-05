@@ -192,7 +192,11 @@
   padding-left: 15px;
   margin-bottom: 15px;
   white-space: nowrap;
-  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.main__resto__menu__card--tp {
   display: flex;
   flex-direction: column;
 }
@@ -213,9 +217,8 @@
   width: 5%;
   font-size: 15px;
   font-weight: 700;
-  position: absolute;
-  right: 7%;
-  top: 55%;
+  margin-top: 40px;
+  margin-right: 20px;
 }
 .main__resto__menu--plats {
   opacity: 0;
