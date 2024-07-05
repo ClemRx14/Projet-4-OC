@@ -111,6 +111,7 @@
             &--tp {
                 display: flex;
                 flex-direction: column;
+                width: 93%;
             }
             &--title {
                 width: 82%;
@@ -132,6 +133,16 @@
                 margin-top: 40px;
                 margin-right: 20px;
 
+            }
+            & i {
+                @include centre;
+                display: flex;
+                width: 15%;
+                background-color: $vertclair;
+                color: white;
+                border-top-right-radius: 15px;
+                border-bottom-right-radius: 15px;
+                
             }
         }
         &--plats {

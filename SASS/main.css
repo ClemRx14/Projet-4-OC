@@ -199,6 +199,7 @@
 .main__resto__menu__card--tp {
   display: flex;
   flex-direction: column;
+  width: 93%;
 }
 .main__resto__menu__card--title {
   width: 82%;
@@ -219,6 +220,17 @@
   font-weight: 700;
   margin-top: 40px;
   margin-right: 20px;
+}
+.main__resto__menu__card i {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 15%;
+  background-color: #ade8d9;
+  color: white;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
 }
 .main__resto__menu--plats {
   opacity: 0;
