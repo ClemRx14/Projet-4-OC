@@ -514,6 +514,7 @@ header i {
   background-color: white;
   margin-bottom: 20px;
   border-radius: 20px;
+  height: 230px;
   position: relative;
 }
 @media screen and (min-width: 768px) {
@@ -522,6 +523,11 @@ header i {
     margin-right: 50px;
     margin-bottom: 50px;
     margin-left: 50px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .main__restaurants__card {
+    height: 260px;
   }
 }
 .main__restaurants__card img {
