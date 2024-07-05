@@ -134,13 +134,13 @@
             opacity: 0;
             animation: menuderouleur 3s ease-in-out forwards;
             &:nth-of-type(1) {
-                animation-delay: 1s;
+                animation-delay: 0s;
             }
             &:nth-of-type(2) {
-                animation-delay: 2s;
+                animation-delay: 1s;
             }
             &:nth-of-type(3) {
-                animation-delay: 3s;
+                animation-delay: 2s;
             }
             @media screen and (min-width: 1024px){
                 width: 60%;
@@ -155,7 +155,7 @@
             margin: auto;
             margin-top: 40px;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-            transition: opacity 1s ease-in-out;
+            transition: opacity 0.3s ease-in-out;
             &:hover {
                 opacity: 0.6;
                 box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);

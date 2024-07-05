@@ -11,12 +11,15 @@
     background: linear-gradient(to bottom, $secondcolor, $firstcolor);
 }
 
+// ***** Mixins pour les boutons à fond violet ******////
+
 @mixin boutton {
     border-radius: 25px;
     height: 50px;
     @include degrade;
 
 }
+
 @mixin boutton-content {
     margin-top: 20px;
     margin-bottom: 40px;
@@ -25,6 +28,8 @@
     padding-left: 20px;
     padding-right: 20px;
 }
+
+// ***** Mixin pour les titres de section *******///
 
 @mixin titlesect {
     padding-top: 20px;
@@ -46,7 +51,5 @@
 
 //***** Partie Pages des restaurants *****//
 
-@mixin titreresto {
-    
-}
+
  
