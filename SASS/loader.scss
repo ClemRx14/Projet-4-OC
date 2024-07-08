@@ -15,32 +15,6 @@
         &__assiette {
             width: 150px;
             height: 150px;
-            display: flex;
-            @include centre;
-            position: relative;
-        }
-        &__aliment1 {
-            width: 70px;
-            height: 70px;
-            position: absolute;
-            top: 38%;
-            right: 47%;
-            transform: rotate(110deg);
-            @media screen and (min-width: 768px) {
-                transform: none;
-                top: 35%;
-            }
-            @media screen and (min-width: 1150px) {
-                top: 37%;
-            }
-            @media screen and (min-width: 1300px) {
-                right: 48%;
-            }
-        }
-        &__aliment2 {
-            position: absolute;
-            top: 45%;
-
         }
     }
     &__chargement {

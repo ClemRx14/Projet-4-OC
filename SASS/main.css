@@ -14,39 +14,6 @@
 .loader__plat__assiette {
   width: 150px;
   height: 150px;
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-}
-.loader__plat__aliment1 {
-  width: 70px;
-  height: 70px;
-  position: absolute;
-  top: 38%;
-  right: 47%;
-  transform: rotate(110deg);
-}
-@media screen and (min-width: 768px) {
-  .loader__plat__aliment1 {
-    transform: none;
-    top: 35%;
-  }
-}
-@media screen and (min-width: 1150px) {
-  .loader__plat__aliment1 {
-    top: 37%;
-  }
-}
-@media screen and (min-width: 1300px) {
-  .loader__plat__aliment1 {
-    right: 48%;
-  }
-}
-.loader__plat__aliment2 {
-  position: absolute;
-  top: 45%;
 }
 .loader__chargement {
   color: #9356DC;
@@ -191,28 +158,33 @@
   width: 93%;
   padding-left: 15px;
   margin-bottom: 15px;
-  white-space: nowrap;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
 }
 .main__resto__menu__card--tp {
   display: flex;
   flex-direction: column;
   width: 93%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .main__resto__menu__card--title {
-  width: 82%;
   font-size: 18px;
   font-weight: 500;
   margin-bottom: 5px;
   margin-top: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .main__resto__menu__card--precision {
-  width: 82%;
   font-size: 15px;
   font-weight: 300;
   margin-top: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .main__resto__menu__card--price {
   width: 5%;
@@ -226,11 +198,19 @@
   justify-content: center;
   align-items: center;
   display: flex;
-  width: 15%;
+  width: 0;
+  opacity: 0;
   background-color: #ade8d9;
   color: white;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
+  flex-shrink: 0;
+}
+.main__resto__menu__card:hover i {
+  animation: checked 0.4s ease-in-out forwards;
+}
+.main__resto__menu__card:not(:hover) i {
+  animation: nochecked 0.4s ease-in-out forwards;
 }
 .main__resto__menu--plats {
   opacity: 0;
@@ -281,6 +261,26 @@
   }
   to {
     opacity: 1;
+  }
+}
+@keyframes checked {
+  from {
+    opacity: 0;
+    width: 0;
+  }
+  to {
+    opacity: 1;
+    width: 15%;
+  }
+}
+@keyframes nochecked {
+  from {
+    opacity: 1;
+    width: 15%;
+  }
+  to {
+    opacity: 0;
+    width: 0;
   }
 }
 * {

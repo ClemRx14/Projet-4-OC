@@ -104,27 +104,26 @@
             width: 93%;
             padding-left: 15px;
             margin-bottom: 15px;
-            white-space: nowrap;
             display: flex;
             flex-direction: row;
-            justify-content: space-between;
             &--tp {
                 display: flex;
                 flex-direction: column;
                 width: 93%;
+                @include ellipsis;
             }
             &--title {
-                width: 82%;
                 font-size: 18px;
                 font-weight: 500;
                 margin-bottom: 5px;
                 margin-top: 10px;
+                @include ellipsis;
             }
             &--precision {
-                width: 82%;
                 font-size: 15px;
                 font-weight: 300;
                 margin-top: 0;
+                @include ellipsis;
             }
             &--price {
                 width: 5%;
@@ -132,17 +131,23 @@
                 font-weight: 700;
                 margin-top: 40px;
                 margin-right: 20px;
-
             }
             & i {
                 @include centre;
                 display: flex;
-                width: 15%;
+                width: 0;
+                opacity: 0;
                 background-color: $vertclair;
                 color: white;
                 border-top-right-radius: 15px;
                 border-bottom-right-radius: 15px;
-                
+                flex-shrink: 0;
+            }
+            &:hover i {
+                animation: checked 0.4s ease-in-out forwards;
+            }
+            &:not(:hover) i {
+                animation: nochecked 0.4s ease-in-out forwards;
             }
         }
         &--plats {
@@ -189,4 +194,25 @@
         opacity: 1;
     }
 }
-// test
+// Animation Checked //////
+
+@keyframes checked {
+    from {
+        opacity: 0;
+        width: 0;
+    }
+    to {
+        opacity: 1;
+        width: 15%;
+    }
+}
+@keyframes nochecked {
+    from {
+        opacity: 1;
+        width: 15%;
+    }
+    to {
+        opacity: 0;
+        width: 0;
+    }
+}
