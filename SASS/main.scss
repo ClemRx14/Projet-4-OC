@@ -91,7 +91,7 @@ header {
         @include boutton-content;
         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
         display: flex;
-        transition: opacity 0.3s ease-in-out;
+        transition: 0.3s ease-in-out;
         &:hover {
             opacity: 0.6;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
@@ -289,19 +289,12 @@ header {
                 }
             }
             &--btncoeur {
-                background: none;
-                border: none;
-                cursor: pointer;
-                display: flex;
-                position: relative;
+                @include coeur;
                 right: -80%;
                 top: -45px;
-                color: black;
-                font-size: 25px;
-                transition: color 0.3s ease;
                 .fa-solid {
                     position: absolute;
-                    transition: opacity 0.3s ease;
+                    transition: 0.3s ease;
                     opacity: 0;
                     color: $heartcolor;
                     &:hover {

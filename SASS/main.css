@@ -90,11 +90,10 @@
   position: relative;
   left: 5%;
   font-size: 25px;
-  transition: color 0.3s ease;
 }
 .main__resto__titlenheart--heart .fa-solid {
   position: absolute;
-  transition: opacity 0.3s ease;
+  transition: 0.3s ease;
   opacity: 0;
   color: #c968db;
 }
@@ -248,7 +247,7 @@
   margin: auto;
   margin-top: 40px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-  transition: opacity 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 .main__resto__menu__btn:hover {
   opacity: 0.6;
@@ -388,7 +387,7 @@ header i {
   padding-right: 20px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   display: flex;
-  transition: opacity 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 .main__info__btn:hover {
   opacity: 0.6;
@@ -637,15 +636,14 @@ header i {
   cursor: pointer;
   display: flex;
   position: relative;
-  right: -80%;
-  top: -45px;
   color: black;
   font-size: 25px;
-  transition: color 0.3s ease;
+  right: -80%;
+  top: -45px;
 }
 .main__restaurants__card__content--btncoeur .fa-solid {
   position: absolute;
-  transition: opacity 0.3s ease;
+  transition: 0.3s ease;
   opacity: 0;
   color: #c968db;
 }

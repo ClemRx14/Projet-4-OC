@@ -39,6 +39,18 @@
     font-weight: 700;
 }
 
+// ****** Mixin pour les coeurs *****///
+
+@mixin coeur {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    position: relative;
+    color: black;
+    font-size: 25px;
+}
+
 //******* Partie Fonctionnement*****/////
 
 @mixin bouttonfonctionnement {

@@ -34,18 +34,11 @@
             font-weight: 400;
         }
         &--heart {
-            background: none;
-            border: none;
-            cursor: pointer;
-            display: flex;
-            color: black;
-            position: relative;
+            @include coeur;
             left: 5%;
-            font-size: 25px;
-            transition: color 0.3s ease;
             .fa-solid {
             position: absolute;
-            transition: opacity 0.3s ease;
+            transition: 0.3s ease;
             opacity: 0;
             color: $heartcolor;
             &:hover {
@@ -175,7 +168,7 @@
             margin: auto;
             margin-top: 40px;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-            transition: opacity 0.3s ease-in-out;
+            transition: 0.3s ease-in-out;
             &:hover {
                 opacity: 0.6;
                 box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);

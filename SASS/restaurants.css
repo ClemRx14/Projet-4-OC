@@ -41,15 +41,14 @@
   border: none;
   cursor: pointer;
   display: flex;
-  color: black;
   position: relative;
-  left: 5%;
+  color: black;
   font-size: 25px;
-  transition: color 0.3s ease;
+  left: 5%;
 }
 .main__resto__titlenheart--heart .fa-solid {
   position: absolute;
-  transition: opacity 0.3s ease;
+  transition: 0.3s ease;
   opacity: 0;
   color: #c968db;
 }
@@ -203,7 +202,7 @@
   margin: auto;
   margin-top: 40px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-  transition: opacity 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 .main__resto__menu__btn:hover {
   opacity: 0.6;
